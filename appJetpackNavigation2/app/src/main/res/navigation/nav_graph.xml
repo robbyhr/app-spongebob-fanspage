@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="robby.hermando.appjetpacknavigation2.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_inputFragment"
+            app:destination="@id/inputFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_linearLayout"
+            app:destination="@id/linearLayout" />
+        <action
+            android:id="@+id/action_mainFragment_to_constraintLayout"
+            app:destination="@id/constraintLayout" />
+    </fragment>
+    <fragment
+        android:id="@+id/inputFragment"
+        android:name="robby.hermando.appjetpacknavigation2.InputFragment"
+        android:label="fragment_input"
+        tools:layout="@layout/fragment_input" >
+        <action
+            android:id="@+id/action_inputFragment_to_outputFragment"
+            app:destination="@id/outputFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/outputFragment"
+        android:name="robby.hermando.appjetpacknavigation2.OutputFragment"
+        android:label="fragment_output"
+        tools:layout="@layout/fragment_output" />
+    <fragment
+        android:id="@+id/linearLayout"
+        android:name="robby.hermando.appjetpacknavigation2.LinearLayout"
+        android:label="fragment_linear_layout"
+        tools:layout="@layout/fragment_linear_layout" />
+    <fragment
+        android:id="@+id/constraintLayout"
+        android:name="robby.hermando.appjetpacknavigation2.ConstraintLayout"
+        android:label="fragment_constraint_layout"
+        tools:layout="@layout/fragment_constraint_layout" />
+</navigation>
