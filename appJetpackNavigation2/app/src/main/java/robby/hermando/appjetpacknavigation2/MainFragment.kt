@@ -32,14 +32,17 @@ class MainFragment : Fragment() {
 
         btnconstraint.setOnClickListener {
             nav.navigate(R.id.action_mainFragment_to_constraintLayout)
+            //NAVIGASI KE FRAGMENT CONSTRAINT LAYOUT
         }
 
         btnlinear.setOnClickListener {
             nav.navigate(R.id.action_mainFragment_to_linearLayout)
+            //NAVIGASI KE FRAGMENT LINEAR LAYOUT
         }
 
         btnnavigate.setOnClickListener {
             nav.navigate(R.id.action_mainFragment_to_inputFragment)
+            //NAVIGASI KE FRAGMENT NAVIGATION LAYOUT
         }
     }
 }
